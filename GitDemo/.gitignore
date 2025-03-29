@@ -1,0 +1,67 @@
+### General Ignore Rules ###
+HELP.md
+
+# Ignore Build Folders
+target/
+build/
+out/
+!**/src/main/**/target/
+!**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Ignore IDE Specific Files
+### STS (Spring Tool Suite) ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+# Ignore Logs and System Files
+*.log
+.DS_Store
+Thumbs.db
+
+# Ignore Maven Wrapper Files (Except the JAR)
+.mvn/
+!mvn/wrapper/maven-wrapper.jar
+
+# Ignore Environment and Configuration Files
+.env
+*.env
+.env.local
+.env.development
+.env.production
+
+# Ignore API Keys and Sensitive Properties
+src/main/resources/application.properties
+src/main/resources/application.yml
+src/main/resources/secrets/
+
+# Ignore Node.js Files (If React Frontend is Included)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Ignore Docker and Kubernetes Files (If Used)
+docker-compose.override.yml
+*.kubeconfig
